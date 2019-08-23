@@ -1,0 +1,7 @@
+---
+ulimit_nofile_hard: "64000"
+ulimit_nofile_soft: "64000"
+ulimit_nproc_hard: "64000"
+ulimit_nproc_soft: "64000"
+ulimit_memlock_hard: "1024"
+ulimit_memlock_soft: "1024"
