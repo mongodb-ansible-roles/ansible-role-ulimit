@@ -1,3 +1,42 @@
 ---
-- include_tasks: setup-Debian.yml
-  when: ansible_os_family == "Debian"
+- name: Set hard limit on number of files
+  pam_limits:
+    domain: "*"
+    limit_type: "hard"
+    limit_item: "nofile"
+    value: "{{ ulimit_nofile_hard }}"
+
+- name: Set soft limit on number of files
+  pam_limits:
+    domain: "*"
+    limit_type: "soft"
+    limit_item: "nofile"
+    value: "{{ ulimit_nofile_soft }}"
+
+- name: Set hard limit on number of processes
+  pam_limits:
+    domain: "*"
+    limit_type: "hard"
+    limit_item: "nproc"
+    value: "{{ ulimit_nproc_hard }}"
+
+- name: Set soft limit on number of processes
+  pam_limits:
+    domain: "*"
+    limit_type: "soft"
+    limit_item: "nproc"
+    value: "{{ ulimit_nproc_soft }}"
+
+- name: Set hard limit on max locked memory
+  pam_limits:
+    domain: "*"
+    limit_type: "hard"
+    limit_item: "memlock"
+    value: "{{ ulimit_memlock_hard }}"
+
+- name: Set soft limit on max locked memory
+  pam_limits:
+    domain: "*"
+    limit_type: "soft"
+    limit_item: "memlock"
+    value: "{{ ulimit_memlock_soft }}"
