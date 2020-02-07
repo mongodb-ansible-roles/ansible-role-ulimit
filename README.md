@@ -3,8 +3,8 @@ Ansible role for ulimit
 
 Sets ulimits for account
 
-![](https://github.com/mongodb-ansible-roles/ansible-role-ulimit/workflows/Molecule%20Test/badge.svg)
-![](https://github.com/mongodb-ansible-roles/ansible-role-ulimit/workflows/Release/badge.svg)
+[![GitHub Actions](https://github.com/mongodb-ansible-roles/ansible-role-ulimit/workflows/Molecule%20Test/badge.svg)](https://github.com/mongodb-ansible-roles/ansible-role-ulimit/actions?query=workflow%3A%22Molecule+Test%22)
+[![GitHub Actions](https://github.com/mongodb-ansible-roles/ansible-role-ulimit/workflows/Release/badge.svg)](https://github.com/mongodb-ansible-roles/ansible-role-ulimit/actions?query=workflow%3A%22Release%22)
 
 Requirements
 ------------
